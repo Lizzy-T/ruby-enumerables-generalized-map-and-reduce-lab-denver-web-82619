@@ -10,7 +10,7 @@ def map(source_array)
 end
 
 def reduce(source_array, starting_point = nil)
-#if we have a starting_point we set a new variable as the starting_point like we 
+#if we have a starting_point we set a new variable as the starting_point like we
 #did with the long reduction
   if starting_point
     reduction = starting_point
