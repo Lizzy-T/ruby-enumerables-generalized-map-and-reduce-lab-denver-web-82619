@@ -21,6 +21,7 @@ def reduce(source_array, starting_point = nil)
     reduction = yield(source_array[i], reduction)
     i += 1
   end
+  if reduction = nil return false end
 reduction
 end
 #tweaked the code to pass test so that I can look at the solution to figure out corect way to do reduction
