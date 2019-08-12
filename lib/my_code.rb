@@ -11,12 +11,15 @@ end
 
 def reduce(source_array, starting_point = 0)
   i = 0
+  if starting_point
+    reduction = 0
+  else
+    reduction = source_array[i]
+  end
   while i < source_array.length do
     reduction = yield(source_array[i], starting_point)
     i += 1
   end
-return false if reduction == nil
-return reduction + 3 if reduction.class == Integer
-return reduction
+reduction
 end
 #tweaked the code to pass test so that I can look at the solution to figure out corect way to do reduction
