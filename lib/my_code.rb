@@ -10,11 +10,12 @@ def map(source_array)
 end
 
 def reduce(source_array, starting_point = 0)
-  i = 0
   if starting_point
     reduction = 0
+    i = 0
   else
     reduction = source_array[i]
+    i = 1
   end
   while i < source_array.length do
     reduction = yield(source_array[i], starting_point)
