@@ -25,7 +25,7 @@ describe 'my own reduce' do
     expect(reduce(source_array){|memo, n| memo + n}).to eq(6)
     #for each loop -  we take the variable reduction (memo)
     #and source_array[i]9=(n)
-    #so that the first pass(DEFAULT i = 1 and reduction = source_array[0]) 
+    #so that the first pass(DEFAULT i = 1 and reduction = source_array[0])
                   #           memo = source_array[0] = 1
                     #         n = source_array[i] = 2
                       # so that 1 + 2 = 3 and become new reduction(memo)
@@ -116,7 +116,7 @@ describe 'my own reduce' do
       #so for our first loop here
       # memo = reduction = source_array[0] = false
       # n = source_array[1] = nil
-      # memo(false) OR n(nil) evaluates to false (b/c neither is true) 
+      # memo(false) OR n(nil) evaluates to false (b/c neither is true)
     #second loop : i = 1
       # reduction from last loop becomes new memo
       # so memo = false
